@@ -14,14 +14,13 @@ for (const btn of allBtn) {
             document.getElementById('seat-count').innerText = seat ;
             document.getElementById('seat-less').innerText = seatLess ;
 
+            if(seat === 4) {
+                disableAllBtn() ;
+            }
 
- 
         }
     setBackgroundColor(e.target.id, '#1DD100') ;
    
-
-
-
 
 // select ticket seat
         const selectedSeat = e.target.innerText
@@ -67,14 +66,8 @@ for (const btn of allBtn) {
         setInnerText('seat-count', seat);
 
 
-
-
-
-
     }) ;
 }
-
-
 
 
 function disableAllBtn() {
@@ -86,10 +79,6 @@ function disableAllBtn() {
 }
 
 
-
-
-
-
 function setBackgroundColor(btnId, value) {
     const btn = document.getElementById(btnId) ;
     if (btn) {
@@ -98,37 +87,6 @@ function setBackgroundColor(btnId, value) {
 }
 
 
-
-
-
-
 function setInnerText(id, value) {
     document.getElementById(id).innerText = value ;
 }
-
-
-// modal part
-
-
-document.getElementById('next-btn').addEventListener('click', function() {
-    const modal =document.getElementById('modal');
-    // modal.classList.add('hidden');
-    modal.style.display = 'block';
-})
-
-
-
-
-
-
-
-
-// const btnApply =document.getElementById('btn-apply');
-//         console.log(btnApply)
-//         btnApply.addEventListener("click", function() {
-//             const couponCode = document.getElementById('coupon-code');
-//             console.log(couponCode)
-//         })
-
-
-
