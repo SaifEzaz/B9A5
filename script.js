@@ -15,9 +15,7 @@ for (const btn of allBtn) {
             document.getElementById('seat-less').innerText = seatLess ;
 
 
-            if(seat === 4) {
-                disableAllBtn() ;
-            }
+ 
         }
     setBackgroundColor(e.target.id, '#1DD100') ;
    
